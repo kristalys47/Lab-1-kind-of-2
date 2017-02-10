@@ -2,40 +2,27 @@ import java.util.Scanner;
 
 public class MyComplexNumber {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner keyboard = new Scanner(System.in);
-		  int val1, val2, val3, val4, sum1, sum2, sub1, sub2;
-         
-      String wordForTheResult;
-      System.out.print("Given a Complex number a+bi and c+di:\nIf a=1 integer, b=2 integer, c=3 integer, d=4 integer, enter the next digits.\n");
-      System.out.print("Enter the first integer   : ");
+    public static void main(String[] args) 
+    {       
+        Scanner keyboard = new Scanner(System.in);
+          int val1, val2, val3, val4, sum1, sum2, multi1, multi2;
+       
+      System.out.print("Given two complex numbers a+bi and c+di, enter the next digits.\n");
+      System.out.print("Enter the value of a  : ");
       val1 = keyboard.nextInt();
-      System.out.print("Enter the second integer  : ");
+      System.out.print("Enter the value of b  : ");
       val2 = keyboard.nextInt();
-      System.out.print("Enter the third integer   : ");
+      System.out.print("Enter the value of c  : ");
       val3 = keyboard.nextInt();
-      System.out.print("Enter the fourth integer  : ");
+      System.out.print("Enter the value of d  : ");
       val4 = keyboard.nextInt();
-      System.out.print("Enter label that will precede the result  : ");
-      wordForTheResult = keyboard.next();
 
       sum1=val1+val3;
       sum2=val2+val4;
-      sub1=val1-val3;
-      sub2=val2-val4;
       
+      multi1=val1*val3-val2*val4;
+      multi2=val1*val4+val2*val3;
       
-      
-
-
-      System.out.println(wordForTheResult + " = " + sum);
-
-      keyboard.close();
-      
-      
-      
-      
-	}
-
-}
+      System.out.println("The sum of the complex numbers is = " + sum1 + " + " + sum2 + "i " );
+      System.out.println("The multiplication of the complex numbers is = " + multi1 + " + " + multi2 + "i " ); 
+    }}
